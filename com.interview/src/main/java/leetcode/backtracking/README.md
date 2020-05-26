@@ -4,19 +4,19 @@ E.g. from  'AABC', generate all permutations
 
 Can use backtracking to solve this.
 
-https://leetcode.com/problems/letter-case-permutation/
+- https://leetcode.com/problems/letter-case-permutation/
 
 ## Combinations
 
 C N k = (N−k)/(!k!N!)
 
-Give a set of N characters, generate string of length k.
+Given a set of N characters, generate string of length k.
 
 Can use backtracking to solve this
 ​	
-https://leetcode.com/problems/letter-tile-possibilities/
-https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/
-https://leetcode.com/problems/iterator-for-combination/
+- https://leetcode.com/problems/letter-tile-possibilities/
+- https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/
+- https://leetcode.com/problems/iterator-for-combination/
 
 # Subset
 2^N, since each element could be absent or present.
@@ -56,7 +56,7 @@ Dont take = 0
 
 In the above logic ,Insert S[i] only if (j>>i)&1 ==true   { j E { 0,1,2,3,4,5,6,7 }   i = ith element in the input array }
 
-element 1 is inserted only into those places where 1st bit of j is 1 
+element 1 is inserted only into athose places where 1st bit of j is 1 
    if( j >> 0 &1 )  ==> for above above eg. this is true for sl.no.( j )= 1 , 3 , 5 , 7 
 
 element 2 is inserted only into those places where 2nd bit of j is 1 
@@ -104,14 +104,14 @@ Time complexity : O(n*2^n) , for every input element loop traverses the whole so
 
 # General strategy:
 
-1. Recursion
+###1. Recursion
 
-2. Backtracking
+###2. Backtracking
+
 Backtracking is an algorithm for finding all solutions by exploring all potential candidates. 
 If the solution candidate turns to be not a solution (or at least not the last one), 
 backtracking algorithm discards it by making some changes on the previous step, 
 i.e. backtracks and then try again.
 
-
-3. Lexicographic generation based on the mapping between binary bitmasks and the corresponding
+###3. Lexicographic generation based on the mapping between binary bitmasks and the corresponding
 permutations / combinations / subsets.
